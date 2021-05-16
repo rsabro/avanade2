@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-exercicio01',
@@ -9,8 +10,9 @@ export class Exercicio01Component implements OnInit {
   counter = 0;
   intervalId;
   botao = "Iniciar";
+  bts = false;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {}
 
@@ -19,6 +21,7 @@ export class Exercicio01Component implements OnInit {
     else{
       clearInterval(this.intervalId);
       this.botao="Iniciar";
+      this.bts = true;
     }
   }
 
@@ -32,6 +35,11 @@ export class Exercicio01Component implements OnInit {
       clearInterval(this.intervalId);
       this.botao="Iniciar";
     }
+  }
+
+  finalizado(){
+    this.counter = 0;
+    this.router.navigate(['/finalizado']);
   }
 
 }

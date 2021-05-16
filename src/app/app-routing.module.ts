@@ -1,3 +1,4 @@
+import { FinalizadoComponent } from './components/finalizado/finalizado.component';
 import { Exercicio01Component } from './components/exercicio01/exercicio01.component';
 import { ExerciciosComponent } from './components/exercicios/exercicios.component';
 import { LoginComponent } from './components/layouts/login/login.component';
@@ -15,7 +16,8 @@ const routes: Routes = [
   { path: 'exercicio01', component: Exercicio01Component },
   { path: 'exercicio02', component: Exercicio02Component },
   { path: 'exercicio03', component: Exercicio03Component },
-  { path: 'exercicio04', component: Exercicio04Component }
+  { path: 'exercicio04', component: Exercicio04Component },
+  { path: 'finalizado', component: FinalizadoComponent }
 ];
 
 @NgModule({
