@@ -1,0 +1,19 @@
+.a_tempo{
+    font-size: 35px;
+    font-weight: bold;
+}
+.a_tempo_num{
+    font-size: 70px;
+    font-weight: bold;
+}
+.a_exercicios{
+    padding: 55px;
+    .col{
+        height: 455px;
+        vertical-align: middle;
+    }
+    img{
+        display: flex;
+        width: 200px;
+    }
+}

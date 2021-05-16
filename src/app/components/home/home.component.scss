@@ -1,0 +1,20 @@
+.a_home{
+    .a_home_imgs{
+        img{
+            width: 150px;
+            margin: 10px;
+            border: #000 solid 3px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .a_ul{
+            line-height: 50px;
+            font-size: 25px;
+        }
+        img:hover{
+            border: white solid 3px;
+        }
+        a:hover{
+            cursor: pointer;
+        }
+    }
+}
